@@ -1,0 +1,44 @@
+#install 
+bluez
+bluez-utils
+pavucontrol (atur volume)
+
+#jalankan module
+lsmod | grep btusb
+
+#cek status adaptar di blok or tidak
+s rfkill list
+#jika iya jalankan perintah ini, jika tidak skip saja
+sudo rfkill unblock bluetooth
+
+#enable bluetooth
+sudo systemctl start bluetooth.service
+sudo systemctl enable bluetooth.service
+
+#pair bluetooth
+1.bluetoothctl
+	help (cek perintah lebih jelas)
+2.power on
+3.scan on (cari device yg ingin dihubungkan)
+4.pair MAC_address
+5.connect MAC_address
+
+#error 
+1.Failed to connect: org.bluez.Error.Failed br-connection-profile-unavailable 
+2.Failed to pair: org.bluez.Error.AlreadyExists
+
+#solve
+1. a.install pulseaudio-bluetooth
+   cara 1
+	 b.sudo systemctl start pulseaudio
+	 c.sudo systemctl enable pulseaudio
+	 cara 2
+	 b.systemctl --user start pulseaudio
+	 c.systemctl --user enable pulseaudio
+
+2. a.hapus atau disconnect dengan device yang terhubung
+
+
+NOTE: Untuk detail step by step
+1. https://wiki.archlinux.org/title/bluetooth
+2. https://linuxhint.com/configure_bluetooth_arch_linux/

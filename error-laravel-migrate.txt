@@ -1,0 +1,33 @@
+## CONTOH ERROR ##
+
+king:belajar-laravel $ php artisan migrate
+
+   Illuminate\Database\QueryException
+
+  could not find driver (SQL: select * from information_schema.tables where table_schema = blogLaravel and table_name = migrations and table_type = 'BASE TABLE')
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:759
+    755▕         // If an exception occurs when attempting to run a query, we'll format the error
+    756▕         // message to include the bindings with SQL, which will make this exception a
+    757▕         // lot more helpful to the developer instead of just the database's errors.
+    758▕         catch (Exception $e) {
+  ➜ 759▕             throw new QueryException(
+    760▕                 $query, $this->prepareBindings($bindings), $e
+    761▕             );
+    762▕         }
+    763▕     }
+
+      +36 vendor frames
+  37  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+## SOLVE ##
+
+cd /etc/php/php.ini
+
+hapus komentar di
+;extension=pdo_mysql => extension=pdo_mysql
+
+restart xampp
+

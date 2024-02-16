@@ -1,0 +1,9 @@
+nmcli device wifi list 
+nmcli device wifi connect 'realme 5' // for wifi no password
+nmcli --ask device wifi connect 'realme 5' // for wifi password
+ping google.com  
+nmcli connection  // for cek wifi yg pernah terhubung device
+
+
+
+

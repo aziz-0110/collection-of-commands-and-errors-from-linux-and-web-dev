@@ -1,0 +1,12 @@
+compile c tanpa librari yg diinstall
+
+$ make <nama file(tanpa extensi)> 
+ex make tes
+
+compile c dgn librari yg di install
+
+$ gcc -o <nama file hasil compile> <nama file yg akan dicompile(dgn extensi)> -l<nama librari yg digunakan>
+ex gcc -o tes tes.c -lcs50
+
+NB:
+Pastikan package gcc sudah terinstall di device

@@ -1,0 +1,10 @@
+
+hanya bisa merubah 1 tema saja
+
+buka file .config/polybar/cuts/modules.ini
+
+pergi ke line 120 [module/battery]
+
+cek dan sesuaikan battery dan adapterny, BAT untuk battery
+dgn cara ketik perintah;
+$ ls -1 /sys/class/power_supply/

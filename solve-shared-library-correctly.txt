@@ -1,0 +1,10 @@
+jika setelah install suatu librari di /usr/local/lib or /usr/local
+
+dan errorny kurang lebih seperti ini;
+error while loading shared libraries: libcs50.so.11: cannot open shared object file: No such file or directory
+
+
+solveny 
+langsung link kan saja librari yg dibuat dgn perintah ini
+
+$ ldconfig /usr/local/lib

@@ -1,0 +1,8 @@
+jika partisi
+  sudo chmod ugo+wx run/media/ryuuguin(your-name)/(your-parisi)
+
+jika folder/direktori
+  sudo chmod -R 777 (letak folder)
+
+penjelasan lebih lengkap
+	https://www.niagahoster.co.id/blog/perbedaan-chmod-dan-chown/

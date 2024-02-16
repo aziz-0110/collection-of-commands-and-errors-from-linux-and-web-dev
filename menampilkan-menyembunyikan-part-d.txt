@@ -1,0 +1,13 @@
+## menyembunyikan
+
+1.buka file menager lalu klik kanan pd computer lalu pilih manage
+2.Storage > Disk Management
+3.klik kanan pd partisi yg ingin di sembunyikan dan pilih Change Drive Letter and Paths...
+4.Klik Remove dan klik ok.
+
+
+## menampilkan
+1.klik kanan pada partisi yg sudah disembunyikan dan pilih Change drive latter and paths...
+2.klik add. kemudian pd Assign the following drive letter: pilih salah satu urutan drive yang ditampilkan, pilih selain A & B saran D. kemudian klik ok.
+
+

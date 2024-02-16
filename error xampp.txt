@@ -1,0 +1,8 @@
+Pesan Error
+XAMPP is currently only availably as 32 bit application. Please use a 32 bit compatibility library for your system
+
+
+Penyelesaian
+sudo pacman -S libxcrypt-compat
+cd /opt/lampp
+sudo ./manager-linux-x64.run

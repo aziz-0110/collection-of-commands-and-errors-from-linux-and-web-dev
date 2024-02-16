@@ -1,0 +1,58 @@
+cara instal apk 
+-lewat internet
+sudo apt-get install nama apk
+  jika terjadi error lakukan ini
+  sudo apt-get update
+  sudo apt-get install nama apk
+  
+-jika file apk sudah ada
+masuk ke direktori tempat file itu berada;
+cd unduhan
+ls
+sudo dpkg -i nama apk 
+  
+  butuh penjelasan liat di cd Gambar/Linux/
+  
+  
+  
+  PERINTAH TERMINAL
+  
+  cd utk masuk ke direktori home/
+  cd "nama file yg ada di direktori home/"
+  cd atau cd- utk keluar dari direktori tsb.
+  ls utk melihat isi direktori home/
+  ls "nama file yg ada di home/" utk melihat isi direktori file yg dituju tanpa masuk ke direktori tsb.
+  mkdir "nama file" utk membuat file di suatu direktori
+  mrdir "nama file" utk menghapus file di suatu direktori (file harus dlm keadaan kosong)
+  rm rf- "nama file" utk menghapus all file di suatu direktori  
+  touch "nama & format file" utk membuat file
+  nano "nama & format file" utk membuat sekaligus edit file
+  mv "nama file" direktori yg dituju/ utk memindahkan file 
+    mv file1.txt direktori yg dituju/ (harus masuk kedirektori file tsb.)
+    
+  cp "nama file" direktori yg dituju/ utk copy
+    cp file.txt direktori yg dituju/ (harus masuk kedirektori file tsb.)
+  
+  rm "nama file" utk hapus file di suatu direktori
+  
+  locate "nama file" utk mencari letak suatu file
+  
+  cat "nama file.txt" utk melihat isi file biasany .txt
+  
+  cal utk kalender 
+  bc utk calculator
+  
+  history utk riwayat
+  !"no history" utk mengulang perintah tsb.
+  !23
+  
+  aptup = sudo apt update && sudo apt upgrade
+  
+  
+  
+  totorial lengkap
+  https://www.gnu.org/software/bash/manual/bash.html#index-COMP_005fTYPE
+  
+
+  
+ 

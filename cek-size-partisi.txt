@@ -1,0 +1,5 @@
+cek size partisi
+df -h | grep ^/dev
+
+cek size direktory
+s du -sh <direktory yg dituju>

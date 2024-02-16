@@ -1,0 +1,9 @@
+cara memunculkan;
+sudo mount /dev/sdb(your name partisi 'sdb hanya sebagai contoh') sdb3(file tempat mount partisi 'buka dgn ranger')
+
+cara menghilangkan;
+sudo umount /dev/sdb(your name partisi)
+
+untuk melihat name partisi;
+lsblk
+cfdisk || cfdisk /dev/sdb

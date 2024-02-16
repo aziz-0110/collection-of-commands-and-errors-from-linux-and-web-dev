@@ -1,0 +1,17 @@
+
+1. pastikan partisi yg dituju sudah bertipe swap dgn cara 
+$sudo blkid   # lihat tipeny jika belum ada buat dulu partisi ny dgn gparted atau app yg sejenisny
+2. aktifkan partisiny
+$sudo swapon /dev/<partisi yg dituju>
+
+jika ingin partisi tetap ada walaupun setelah booting
+1. pastikan partisi yg dituju sudah ada
+$sudo vim /etc/fstab
+2. tambahkan perintah dibawa di baris terakhir
+/dev/<partisi yg dituju none swap sw 0 0
+
+referensi
+1.create swap partision
+https://www.archlinuxuser.com/2013/01/how-to-create-swap-partition-on.html
+2.enable swap on startup
+https://askubuntu.com/questions/571516/why-cant-i-enable-swap-on-startup

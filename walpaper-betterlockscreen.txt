@@ -1,0 +1,5 @@
+untuk 1 walpaper
+betterlockscreen -u ~/your-direktory.png
+
+random walpaper
+betterlockscreen -u ~/your-direktory(yang ada beberapa foto)

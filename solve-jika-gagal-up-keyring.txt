@@ -1,0 +1,19 @@
+error "Failed to commit transaction (invalid or corrupted package)" error
+
+solve 
+1. coba update keyring
+    $ sudo pacman -Sy archlinux-keyring
+
+  jika masih gagal
+2. nonaktif pengecekan keyring (signature cheking)
+    1. $ vim /etc/pacman.conf  
+    2. pergi ke baris [options]
+    3. ganti konfigurasi seperti dibawah ini
+        SigLevel = Never
+        #LocalFileSigLevel = Optional
+        #RemoteFileSigLevel = Required
+
+        dan komentari SigLevel di pengaturan repositori manapun.
+
+referensi
+  https://wiki.archlinux.org/title/Pacman/Package_signing#Troubleshooting

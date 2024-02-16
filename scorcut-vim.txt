@@ -1,0 +1,93 @@
+﻿SHORCUT VIM
+
+
+- Lokasi dan nama file konfigurasi pada Vim: ~/.vim/vimrc atau ~/.vimrc
+- Lokasi dan nama file konfigurasi pada NeoVim: ~/.config/nvim/init.vim 
+- Untuk menjadikan NeoVim menerapkan konfigurasi yang sama dengan Vim, sertakan konfigurasi berikut pada file ini.vim: source ~/.vim/vimrc
+
+
+Catatan penting lain:
+- Beralih ke Normal Mode (tekan tombol Esc)
+- Beralih ke Insert Mode (tekan tombol Esc lalu tekan tombol i)
+- Beralih ke Visual Mode (tekan tombol Esc lalu tekan tombol v)
+- Beralih ke Command Mode (tekan tombol Esc  lalu :)
+- Esc :q    adalah cara untuk keluar dari Vim.
+- Esc :q!   adalah cara untuk keluar dari Vim dan mengabaikan proses saving data.
+
+
+
+
+Navigasi Dasar:
+-   tombol h untuk menggeser cursor ke kiri.
+-   tombol j untuk menggeser cursor ke bawah.
+-   tombol k untuk menggeser cursor ke atas.
+-   tombol l untuk menggeser cursor ke kanan.
+
+
+copy, cut, paste, undo, redo
+-   Tombol y untuk melakukan yank atau copy
+-   Tombol d untuk melakukan cut atau delete
+-   Tombol p untuk melakukan paste
+-   Tombol u untuk melakukan undo
+-   Tombol ctrl-r untuk melakukan redo
+
+
+Navigasi Baris:
+-   tombol 0 (angka nol) untuk memindahkan cursor ke awal baris.
+-   tombol $ (dollar) untuk memindahkan cursor ke akhir baris.
+
+
+Navigasi Kata:
+-   tombol b untuk memindahkan cursor ke awal Kata
+-   tombol w untuk memindahkan cursor ke awal kata berikutnya
+-   tombol e untuk memindahkan cursor ke akhir kata
+
+
+Navigasi Jendela:
+-   tombol H (H besar) untuk memindahkan cursor ke posisi atas
+-   tombol L (L besar) untuk memindahkan cursor ke posisi bawah
+-   tombol M (M besar) untuk memindahkan cursor ke posisi tengah
+
+
+Navigasi Tambahan:
+-   tombol gg (g kecil dua kali) untuk melompat ke awal file
+-   tombol G (G besar) untuk melompat ke akhir file
+
+
+Scrolling:
+-   Ctrl+f untuk melakukan forward scrolling (satu halaman ke depan)
+-   Ctrl+b untuk melakukan backward scrolling (satu halaman ke belakang)
+-   Ctrl+u untuk melakukan scroll up (setengah halaman ke atas)
+-   Ctrl+d untuk melakukan scroll down (setengah halaman ke bawah)
+Pencarian teks 
+- Tombol / digunakan untuk memulai proses pencarian dengan diikuti kata yang akan dicari lalu diakhiri tombol enter
+- Tombol n digunakan untuk melakukan pencarian ke depan
+- Tombol N digunakan untuk melakukan pencarian ke belakang
+- Tombol ggn digunakan untuk melakukan proses pencarian dimulai dari awal dokumen
+- Tombol GN digunakan untuk melakukan proses pencarian dimulai dari akhir dokumen
+- Tombol * digunakan untuk melakukan proses pencarian (ke depan) untuk kata yang sedang ditunjuk kursor
+- Tombol # digunakan untuk melakukan proses pencarian (ke belakang) untuk kata yang sedang ditunjuk kursor
+- Command :set hlsearch untuk mengaktifkan fitur highlight search
+- Command :set nohlsearch untuk menonaktifkan fitur highlight search
+- Command :set incsearch untuk mengaktifkan fitur incremental search
+
+
+
+
+Konfigurasi dasar
+-  :set number untuk mengaktifkan fitur line number
+-  :set relativenumber untuk mengaktifkan fitur relative line number
+-  :set cursorline untuk mengaktifkan fitur cursor line
+-  :set showmode untuk mengaktifkan fitur show mode
+-  :set visualbell untuk mengaktifkan fitur visual bell
+-  :syntax on untuk mengaktifkan fitur syntax highlighting
+-  :colorscheme desert untuk mengubah tema warna ke tema desert, tema warna lain yang bisa dipilih di antaranya: default, industry
+
+
+
+
+Conquer of Completion
+1. gd : go to definition
+2. gr : go to references
+3. K : show description 
+4. \rn : refactoring new naw

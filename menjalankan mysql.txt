@@ -1,0 +1,7 @@
+cd /opt/lampp/bin/
+./mysql -u root
+
+or
+cd /opt/lampp/bin/
+./mysql -u root -p
+(jika diminta password maka biarkan saja kosong / langsung klik enter)

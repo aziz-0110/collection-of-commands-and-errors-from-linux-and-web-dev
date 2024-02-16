@@ -1,0 +1,7 @@
+hapus komentar NTP di /etc/systemd/timesyncd.conf
+
+lalu ketikkan perintah
+sudo timedatectl set-ntp yes
+
+cek waktu
+timedatectl

@@ -1,0 +1,3 @@
+sp -Scc
+sp -Qtdq
+rm -rf ~/.cache/*

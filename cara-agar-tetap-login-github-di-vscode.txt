@@ -1,0 +1,7 @@
+cara agar tetap login github di vscode
+
+1. instal gnome-keyring
+2. open vscode
+3. login to github
+4. after that, show pop up create password keyring, so create to password
+5. complate, untuk mengujinya restart vscode.

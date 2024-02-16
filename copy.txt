@@ -1,0 +1,2 @@
+cp //file
+cp -R //direktory & file || rsync -a //untuk mempertahankan pemilik
